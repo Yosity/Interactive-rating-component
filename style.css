@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color:  hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+
+}
+p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+h1 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.rating-card{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    background-color: hsl(213, 19%, 18%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 370px;
+    min-width: 330px;
+    padding: 1.8rem 1.3rem;
+
+    border-radius: 1.3rem;
+    box-shadow: 0 0 5px rgba(15, 14, 14, 0.671);
+
+    transition: top 0.45s ease-in;
+}
+.star-container{
+    background-color: hsl(213, 16%, 22%);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 5px;
+    border-radius: 18px;
+
+    margin-bottom: 1.4rem;
+}
+.star-container img {
+    width: 15px;
+    height: 15px;
+}
+
+.ratingValue-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color:hsl(217, 12%, 63%) ;
+    width: 100%;
+    margin: 1.4rem auto;
+}
+.circle {
+    background-color: hsl(213, 16%, 22%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding: 5px;
+    border-radius: 25px;
+
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+.circle:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    font-weight: bold;
+}
+
+#submit {
+    width: 100%;
+    padding: 13px;
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: bold;
+    border-radius: 1.2rem;
+    border: none;
+
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+#submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.thanks-card {
+    text-align: center;
+    z-index: -1;
+    position: absolute;
+    background-color: hsl(213, 19%, 18%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 370px;
+    min-width: 330px;
+    padding: 1.8rem 1.3rem;
+
+    border-radius: 1.3rem;
+    box-shadow: 0 0 5px rgba(15, 14, 14, 0.671);
+}
+.thanks-card img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1.7rem;
+}
+#rateResult{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 16%, 22%);
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 1.3rem;
+    width: 180px;
+
+    border-radius: 18px;
+}
+#paragraph {
+    margin-top: -0.8rem;
+    line-height: 1.3rem;
+}
